@@ -265,7 +265,7 @@ class TileLayer extends EngineObject
         this.savedRenderSettings = [mainCanvas, mainContext, mainCanvasSize, cameraPos, cameraScale];
 
         // use webgl rendering system to render the tiles if enabled
-        // this works by temporally taking control of the rendering system
+        // this works by temporarily taking control of the rendering system
         mainCanvas = this.canvas;
         mainContext = this.context;
         mainCanvasSize = this.size.multiply(this.tileInfo.size);
@@ -299,7 +299,7 @@ class TileLayer extends EngineObject
 
     /** Draw the tile at a given position in the tile grid
      *  This can be used to clear out tiles when they are destroyed
-     *  Tiles can also be redrawn if isinde a redrawStart/End block
+     *  Tiles can also be redrawn if inside a redrawStart/End block
      *  @param {Vector2} layerPos 
      *  @param {Boolean} [clear] - should the old tile be cleared out
      */
